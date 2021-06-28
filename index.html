@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+    <link rel="icon" href="/images/devchallenges.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+    <title>Devchallenges</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&display=swap');
+
+        html {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: inherit;
+            -moz-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: "Poppins", sans-serif;
+            padding: 0 5%;
+            margin: 0;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .header {
+            font-family: 'Inconsolata', monospace;
+            margin: 1rem 0;
+            /* background-color: aqua; */
+        }
+
+        .header__title-no-found {
+            font-size: 24px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2% 0 2% 0;
+            /* background-color: #f7542e; */
+        }
+
+        .main__img-not-found,
+        .main__title-not-found {
+            width: 100%;
+        }
+
+        .image__operating {
+            width: 100%;
+            padding: 0px;
+        }
+
+
+        .footer {
+            margin-top: 5%;
+            /* background-color: blueviolet; */
+        }
+
+        .title__bad-news {
+
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 94px;
+        }
+
+        .description__not-found {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 35px;
+            width: 100%;
+            max-width: 365px;
+        }
+
+        .button__home-page {
+            max-width: 210px;
+            width: 100%;
+            height: 70px;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            background-color: #333333;
+        }
+
+        .footer__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__text {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #BDBDBD;
+        }
+
+        .footer__username {
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            .title__bad-news {
+                font-size: 48px;
+                line-height: 71px;
+                margin: 10px 0;
+            }
+            
+            .button__home-page {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .button__home-page {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            .main {
+                flex-direction: row;
+            }
+
+            .image__operating {
+                width: 100%;
+                padding: 0 4rem 0 0;
+            }
+            .main__img-not-found,
+            .main__title-not-found {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title-no-found">404 NOT FOUND</h1>
+    </header>
+    <main class="main">
+        <div class="main__img-not-found">
+            <img src="/images/Scarecrow.png" alt="Non-operating image" class="image__operating">
+        </div>
+        <div class="main__title-not-found">
+            <h1 class="title__bad-news"> I have bad news for you</h1>
+            <p class="description__not-found">The page you are looking for might be removed or is temporarily
+                unavailable</p>
+            <button class="button__home-page">BACK TO HOME PAGE</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <span class="footer__text">created by <a class="footer__username">Theos48</a> - devChallenges.io</span>
+        </div>
+    </footer>
+</body>
+
+</html>
